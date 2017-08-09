@@ -31,13 +31,13 @@ input {
 	display: inline;
 }
 
-button {
+button[type=submit] {
     background-color: #FFF;
     border: 1px #fff solid;
-    border-radius: 12px;
+    border-radius: 3px;
     color: #000;
     font-weight: 700;
-    padding: 10px 26px;
+    padding: 8px 24px;
     text-align: center;
     margin: 10px;
 }
@@ -54,12 +54,13 @@ button {
 }
 
 .login_logo {
+	padding-bottom: 35px;
 	border-radius: 5px;
 	
 	img {
 	max-width: 100%;
     height: auto;
-    margin: auto;
+    margin: 0 auto;
     display: block;
 	}
 }
@@ -92,4 +93,8 @@ button {
 
 .icon {
 	width: 10px;
+}
+
+.error {
+	border: 3px solid red;
 }
