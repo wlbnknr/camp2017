@@ -3,7 +3,7 @@
 $blue: #0bbed3;
 
 body {
-	background: url("http://www.mycity-hub.com/img/home/home-bg.jpeg") no-repeat center center;
+	background: url("../etc/login_background.jpg") no-repeat center center;
  	background-size: cover;
  	background-attachment: fixed;
 	color: #fff;
@@ -23,24 +23,7 @@ nav {
 	}
 }
 
-input {
-	float: left;
-	width: 100%;
-	border-radius: 3px;
-	border: none;
-	display: inline;
-}
 
-button[type=submit] {
-    background-color: #FFF;
-    border: 1px #fff solid;
-    border-radius: 3px;
-    color: #000;
-    font-weight: 700;
-    padding: 8px 24px;
-    text-align: center;
-    margin: 10px;
-}
 
 .container {
 	position: absolute;
@@ -71,6 +54,31 @@ button[type=submit] {
 	background: $blue;
 	border-radius: 5px;
 	text-align: center;
+	
+	input[type=password] {
+		float: left;
+		width: 100%;
+		border-radius: 5px;
+		border: none;
+		display: inline;
+	}
+
+	button[type=submit] {
+	    background-color: #FFF;
+	    border: 1px #fff solid;
+	    border-radius: 3px;
+	    color: #000;
+	    font-weight: 700;
+	    padding: 5px 40px;
+	    text-align: center;
+	    margin: 10px;
+	}
+
+	.input-group-label {
+		border: none;
+		border-radius: 5px;
+		background: $blue;
+	}
 }
 
 .user_number {
@@ -96,5 +104,25 @@ button[type=submit] {
 }
 
 .error {
-	border: 3px solid red;
+	border: 2px solid red !important;
+}
+
+.alert {
+	background: #fff;
+	display: none;
+	color: red;
+	border: 2px solid red;
+	border-radius: 20px;
+	margin-bottom: 6px;
+}
+
+.alert:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 26px;
+	bottom: 92px;
+	border: 10px solid;
+	border-color: transparent transparent #F00 transparent;
 }
