@@ -1,0 +1,28 @@
+.icon {
+	width: 30px;
+	height: 30px;
+}
+
+.error {
+	border: 2px solid red !important;
+}
+
+.alert {
+	background: #fff;
+	display: none;
+	color: red;
+	border: 2px solid red;
+	border-radius: 20px;
+	margin-bottom: 6px;
+}
+
+.alert:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 26px;
+	bottom: 92px;
+	border: 10px solid;
+	border-color: transparent transparent #F00 transparent;
+}

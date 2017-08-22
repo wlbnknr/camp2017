@@ -1,60 +1,60 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>efi3 login</title>
-  <link rel="stylesheet" href="css/app.css">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>efi3 login</title>
+	<link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
+	<main class="login_wrapper">
+	<div class="login_container">
+		<div class="row">
+			<div class="columns small-12 medium-2 medium-offset-1 large-2 large-offset-2 login_logo">
+				<img src="etc/ef_log.png" alt="logo"/>
+			</div>
 
-  <div class="container">
-    <div class="row">
-      <div class="columns small-12 medium-2 medium-offset-1 large-2 large-offset-2 login_logo">
-        <img src="etc/ef_log.png" alt="logo"/>
-      </div>
+			<div class="columns small-12 medium-6 large-4 end">
+				<div class="login_panel">
+					<h1>Login</h1>
+					<p>Aby zaimportować dane zaloguj się do swojego banku</p>
+					<div class="login_frame">
+						<img src="etc/user_thumbnail.jpg" class="user_thumbnail" alt="User icon">
+						<p class="user_number">127633223
+							<a href=""><img src="etc/cross.png" class="icon" alt="Delete login"/></a>
+						</p>
 
-      <div class="columns small-12 medium-6 large-4 end">
-        <div class="login_panel">
-          <h1>Login</h1>
-          <p>Aby zaimportować dane zaloguj się do swojego banku</p>
-          <div class="login_frame">
-            <img src="etc/user_thumbnail.jpg" class="user_icon" alt="User icon">
-            <p class="user_number">127633223
-              <a href=""><img src="etc/cross.png" class="icon" alt="Delete login"/></a>
-            </p>
+						<form>
+							<div class="input-group">
+								<input type="password" class="login input-group-field">
+								<a href="" class="input-group-label"><img src="etc/keyboard.png" alt="Screen keyboard"/></a>
+							</div>
+							<div class="alert">
+							</div>
+							<a href="">SELECT OTHER</a>
+							<button type="submit" class="submit">GO</button>
+						</form>
 
-            <form>
-              <div class="input-group">
-                <input type="password" class="login input-group-field">
-                <a href="" class="input-group-label"><img src="etc/keyboard.png" alt="Screen keyboard"/></a>
-              </div>
-              <div class="alert">
-              </div>
-              <a href="">SELECT OTHER</a>
-              <button type="submit" class="submit">GO</button>
-            </form>
+					</div>
+				</div>  
 
-          </div>
-        </div>  
-
-        <nav>
-          <ul>
-            <li><a href="">SECURITY</a></li>
-            <li><a href="">LOGGING IN</a></li>
-            <li><a href="">CONTACT</a></li>
-          </ul>
-        </nav>
-        </div>
-    </div>
-  </div>
-
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/what-input/dist/what-input.js"></script>
-  <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/login.js"></script>
+				<nav>
+					<ul>
+						<li><a href="">SECURITY</a></li>
+						<li><a href="">LOGGING IN</a></li>
+						<li><a href="">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	</main>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/dist/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/login.js"></script>
 </body>
 </html>

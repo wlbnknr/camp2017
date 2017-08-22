@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>efi3 dashboard</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <div class="dashboard_wrapper">
+
+    <nav>
+       
+        <div class="user_box">
+        <div>
+            <img src="etc/ef_log.png" alt="logo" class="thumbnail"/>
+            </div>
+
+            <div>
+            <img src="etc/user_thumbnail.jpg" alt="User icon" class="thumbnail"/>
+            </div>
+
+            <div>
+            <p>Jan Kowalski</p>
+
+            <ul class="menu">
+              <img src="etc/envelope.png" class="icon" alt="Messages"/>
+              <img src="etc/settings.png" class="icon"/ alt="Settings">
+            </ul>
+            </div>
+        </div>
+
+        <div class="nav_box">
+
+            <ul class="menu">
+              <li class="nav_link"><a href=""><img src="etc/home.png" class="icon"/><p>HOME</p></a></li>
+              <li class="nav_link"><a href=""><img src="etc/analyze.png" class="icon"/><p>ANALYSE</p></a></li>
+              <li class="nav_link"><a href=""><img src="etc/plan.png" class="icon"/><p>PLAN</p></a></li>
+              <li class="nav_link"><a href=""><img src="etc/earn.png" class="icon"/><p>EARN</p></a></li>
+            </ul>
+
+        </div>
+
+        <div>
+          <a href=""><img src="etc/search.png" class="icon"/></a>
+          <a href=""><img src="etc/logout.png" class="icon"/></a>
+        </div>
+
+    </nav>
+
+    <div class="dashboard_container">
+
+      <main>
+
+          <div class="dashboard_header">
+            <h1>Finance life stream</h1>
+            <span>Add
+            <button type="submit">BANK</button>
+            <button type="submit">PAYMENT</button>
+            </span>
+          </div>
+
+          <div class="finance_data">
+            <div>
+            <h2>Balance</h2>
+            <span class="quantity">7200,34</span> <span>PLN</span>
+            </div>
+
+            <div>
+            <h2>Available funds</h2>
+            <span class="quantity">7200,34</span> <span>PLN</span>
+            </div>
+
+            <div>
+            <h2>Scheduled payments</h2>
+            <span class="quantity">2200,34</span> <span>PLN</span> <button>FAST PAY</button>
+            </div>
+
+            <div>            
+            <span>Account analysis
+            <div class="switch">
+              <input class="switch-input" id="analysis_switch" type="checkbox" name="analysis_switch">
+              <label class="switch-paddle" for="analysis_switch">
+              </label>
+            </div>
+            </span>
+            </div>
+          </div>
+
+        <div class="row column small-12">
+          <img src="etc/chart_placeholder.jpg"/>
+        </div> 
+
+      
+      </main>
+
+  </div>
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/dist/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,5 +1,62 @@
+.idea/
+bin/
+tmp/
+node_modules/
+bower_components/
+.settings/
+.sass-cache/
+resources/
+local.properties
+.project
+.metadata
+.gradle
+.loadpath
+.build-path
+*~
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.iml
+
+# Compiled sources
+
+target/
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyo
+*.pyc
+ 
+# Packages
+
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+ 
+# Logs
+
+*.log
+
+# Databases, might be need versioning
+
+*.sql
+*.sqlite
+ 
+# Operating System generated files
+
 .DS_Store
-bower_components
-node_modules
-npm-debug.log
-css
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

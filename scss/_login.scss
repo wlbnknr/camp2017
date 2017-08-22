@@ -1,50 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
 
-$blue: #0bbed3;
+$blue: #0BBED3;
+$gray: #DADBDB;
+$bold: 700;
+$regular: 400;
+$light: 300;
 
 body {
-	background: url("../etc/login_background.jpg") no-repeat center center;
- 	background-size: cover;
- 	background-attachment: fixed;
 	color: #fff;
 	font-family: 'Roboto Condensed', sans-serif;
-	font-weight: 300;
+	font-weight: $regular;
 }
 
 a {
 	color: #fff;
 }
 
-nav {
-	li {
-	display: inline;
-	font-weight: 700;
-	font-size: 0.7em;
-	}
+.login_wrapper {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url("../etc/login_background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-
-
-.container {
-	position: absolute;
+.login_container {
+	position: relative;
 	margin-top: 10%;
 	width: 100%;
 
 	h1 {
 		font-size: 2em;
-		font-weight: 700;
+		font-weight: $bold;
 	}
-}
+	nav {
+		li {
+			display: inline;
+			font-weight: $bold;
+			font-size: 0.7em;
+		}
+	}
 
-.login_logo {
-	padding-bottom: 35px;
-	border-radius: 5px;
-	
-	img {
-	max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+	.login_logo {
+		padding-bottom: 35px;
+		border-radius: 5px;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			margin: 0 auto;
+			display: block;
+		}
 	}
 }
 
@@ -54,7 +61,7 @@ nav {
 	background: $blue;
 	border-radius: 5px;
 	text-align: center;
-	
+
 	input[type=password] {
 		float: left;
 		width: 100%;
@@ -64,14 +71,23 @@ nav {
 	}
 
 	button[type=submit] {
-	    background-color: #FFF;
-	    border: 1px #fff solid;
-	    border-radius: 3px;
-	    color: #000;
-	    font-weight: 700;
-	    padding: 5px 40px;
-	    text-align: center;
-	    margin: 10px;
+		background-color: #FFF;
+		border: 1px #fff solid;
+		border-radius: 3px;
+		color: #000;
+		font-weight: $bold;
+		padding: 5px 40px;
+		text-align: center;
+		margin: 10px;
+	}
+
+	.icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.user_number {
+		font-weight: $bold;	
 	}
 
 	.input-group-label {
@@ -81,9 +97,6 @@ nav {
 	}
 }
 
-.user_number {
-	font-weight: 700;	
-}
 
 .login_frame {
 	position: relative;
@@ -91,38 +104,12 @@ nav {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 5px;
 	padding: 10px;
+
+	.user_thumbnail {
+		margin-top: -50px;
+		border-radius: 50%;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
 }
 
-.user_icon {
-	margin-top: -50px;
-	border-radius: 50%;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.icon {
-	width: 10px;
-}
-
-.error {
-	border: 2px solid red !important;
-}
-
-.alert {
-	background: #fff;
-	display: none;
-	color: red;
-	border: 2px solid red;
-	border-radius: 20px;
-	margin-bottom: 6px;
-}
-
-.alert:before {
-	content: '';
-	position: absolute;
-	width: 0;
-	height: 0;
-	left: 26px;
-	bottom: 92px;
-	border: 10px solid;
-	border-color: transparent transparent #F00 transparent;
-}

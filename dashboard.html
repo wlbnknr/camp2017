@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>efi3 dashboard</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <div class="dashboard_wrapper">
+
+    <nav>
+      <div class="row">
+
+        <div class="column small-12 medium-4">
+          <div class="row">
+            <div class="column">
+              <div class="row">
+                <div class="column small-6">
+                  <img src="etc/ef_log.png" alt="logo" class="thumbnail"/>
+                </div>
+                <div class="column small-6">
+                  <img src="etc/user_thumbnail.jpg" alt="User icon" class="thumbnail">
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              Jan Kowalski
+
+              <img src="etc/envelope.png" class="icon"/>
+
+              <img src="etc/settings.png" class="icon"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="navigation_list column small-12 medium-4">
+            <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="">ANALYSE</a></li>
+              <li><a href="">PLAN</a></li>
+              <li><a href="">EARN</a></li>
+            </ul>
+        </div>
+
+        <div class="column small-11 medium-3">
+          <form class="input-group">
+            <input class="input-group-field">
+            <button type="submit" class="input-group-button"><img src="etc/search.png" class="icon"/></button>
+          </form>
+        </div>
+        <div class="column small-1 medium-1">
+          <a href=""><img src="etc/logout.png" class="icon"/></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="dashboard_container">
+      <main>
+        <div class="row">
+          <div class="column small-9">
+            <div class="row column">
+              <h1>Finance life stream</h1>
+            </div>
+            <div class="finance_data row">
+
+              <div class="column">
+                <h2>Balance</h2>
+                <span>7200,34 PLN</span>
+              </div>
+
+              <div class="column">
+                <h2>Available funds</h2>
+                <span>7200,34 PLN</span>
+              </div>
+
+              <div class="column">
+                <h2>Scheduled payments</h2>
+                <span>2200,34 PLN</span> <button>FAST PAY</button>
+              </div>
+            </div>
+          </div>
+          <div class="column small-3">
+
+            <div class="row">
+              <span>Add
+                <button type="submit">BANK</button>
+                <button type="submit">PAYMENT</button>
+              </span>
+            </div>
+
+            <div class="row">            
+              Account analysis
+              <div class="switch">
+                <input class="switch-input" id="analysis_switch" type="checkbox" name="analysis_switch">
+                <label class="switch-paddle" for="analysis_switch">
+                </label>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row column small-12">
+          <img src="etc/chart_placeholder.jpg"/>
+        </div>
+
+        <div class="row">
+          <div class="column small-12 medium-6">
+            Products
+            <div class="row">
+              <div class="column small-12 medium-6">
+                <p>Wallets</p>
+                <p>500,00 PLN</p>
+              </div>
+              <div class="column small-12 medium-6">
+                <p>Deposits</p>
+                <p>10 000,00 PLN</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column small-12 medium-6">
+                <p>Accounts</p>
+                <p>7200,00 PLN</p>
+              </div>
+              <div class="column small-12 medium-6">
+                <p>Funds</p>
+                <p>7000 PLN</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column small-12 medium-6 end">
+                <p>Bank loans</p>
+                <p>-127 000 PLN</p>
+              </div>
+            </div>
+          </div>
+          <div class="column small-12 medium-6">
+            History
+            <div class="column small-12 row">
+              Stuff
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/dist/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
