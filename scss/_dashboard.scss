@@ -2,7 +2,7 @@
 	position: absolute;
 	width: 100%;
 	background: $blue;
-
+	padding-top: 30px;
 
 	nav {
 		margin: 0 auto;
@@ -29,7 +29,7 @@
 
 			.nav_link {
 				width: 25%;
-				
+
 				a {
 					display: flex;
 					flex-direction: column;
@@ -67,6 +67,7 @@
 	.dashboard_container {
 		width: 100%;
 		background: $gray;
+		padding-bottom: 60px;
 
 		h1 {
 			font-weight: $light;
@@ -96,11 +97,11 @@
 			align-items: center;
 		}
 
-		.finance_data {
+		.finance_stream {
 			display: flex;
 			justify-content: space-between;
 			font-weight: $light;
-			padding-bottom: 20px;
+			margin-bottom: 20px;
 
 			h2 {
 				font-size: 1.5em;
@@ -110,9 +111,37 @@
 				display: inline-block;
 			}
 
-
 			.quantity {
 				font-weight: $bold;
+			}
+		}
+
+		.finance_data {
+			margin-top: 20px;
+			h2 {
+				font-size: 1em;
+			}
+			.product_box {
+				background-color: white;
+				padding: 1em;
+				border-radius: 2px;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			.history_box{
+				background-color: white;
+				padding: 1em;
+				border-radius: 2px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				.history_transaction {
+					display: flex;
+					flex-direction: column;
+				}
 			}
 		}
 	}
