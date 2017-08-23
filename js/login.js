@@ -29,7 +29,7 @@
 
 				// Changes input & alert styles to display error
 				input.classList.add("error");
-				alert.innerHTML = apiResponse.message;
+				alert.innerText = apiResponse.message;
 				alert.style.display = "block";
 	  		},
 	  		success: function(response) {

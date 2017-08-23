@@ -66,17 +66,17 @@
         <div class="finance_stream">
           <div>
             <h2>Balance</h2>
-            <span class="quantity">7200,34</span> <span>PLN</span>
+            <span id="balance_quantity" class="quantity"></span> <span>PLN</span>
           </div>
 
           <div>
             <h2>Available funds</h2>
-            <span class="quantity">7200,34</span> <span>PLN</span>
+            <span id="funds_quantity" class="quantity"></span> <span>PLN</span>
           </div>
 
           <div>
             <h2>Scheduled payments</h2>
-            <span class="quantity">2200,34</span> <span>PLN</span> <button>FAST PAY</button>
+            <span id="payments_quantity" class="quantity"></span> <span>PLN</span> <button>FAST PAY</button>
           </div>
 
           <div>            
@@ -96,96 +96,35 @@
 
 
         <div class="finance_data row">
+          
           <div class="column small-12 medium-6">
-            Products
-            <div class="row">
-              <div class="product_box column small-12 medium-6">
-                <img src="etc/wallet.png" class="icon"/>
-                <div>
-                  <h2>Wallets</h2>
-                  <span>500,00 PLN</span>
-                </div>
-              </div>
-              <div class="product_box column small-12 medium-6">
-                <img src="etc/deposits.png" class="icon"/>
-                <div>
-                  <h2>Deposits</h2>
-                  <span>10 000,00 PLN</span>
-                </div>
-              </div>
+            <h2>Products</h2>
+
+            <div class="products">
             </div>
-            <div class="row">
-              <div class="product_box column small-12 medium-6">
-                <img src="etc/accounts.png" class="icon"/>
-                <div>
-                  <h2>Accounts</h2>
-                  <span>7200,00 PLN</span>
-                </div>
-              </div>
-              <div class="product_box column small-12 medium-6">
-                <img src="etc/funds.png" class="icon"/>
-                <div>
-                  <h2>Funds</h2>
-                  <span>7000 PLN</span>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="product_box column small-12 medium-6">
-                <img src="etc/loans.png" class="icon"/>
-                <div>
-                  <h2>Bank loans</h2>
-                  <span>-127 000 PLN</span>
-                </div>
-              </div>
-            </div>
+
           </div>
+
           <div class="column small-12 medium-6">
-            History
-            <div class="history_box column small-12">
-              <div class="history_date">29.06</div>
-              <div class="history_transaction">
-                <span class="transaction_location">Gas station Shell...</span>
-                <span class="transaction_type">Gas</span>
-              </div>
-              <div class="history_amount"><span>-100,00</span> PLN
-              </div>
+            <h2>History</h2>
+
+            <div class="history">
             </div>
-            <div class="history_box column small-12">
-              <div class="history_date">29.06</div>
-              <div class="history_transaction">
-                <span class="transaction_location">Gas station Shell...</span>
-                <span class="transaction_type">Gas</span>
-              </div>
-              <div class="history_amount"><span>-100,00</span> PLN</div>
-            </div>
-            <div class="history_box column small-12">
-              <div class="history_date">29.06</div>
-              <div class="history_transaction">
-                <span class="transaction_location">Gas station Shell...</span>
-                <span class="transaction_type">Gas</span>
-              </div>
-              <div class="history_amount"><span>-100,00</span> PLN</div>
-            </div>
-            <div class="history_box column small-12">
-              <div class="history_date">29.06</div>
-              <div class="history_transaction">
-                <span class="transaction_location">Gas station Shell...</span>
-                <span class="transaction_type">Gas</span>
-              </div>
-              <div class="history_amount"><span>-100,00</span> PLN</div>
-            </div>
+
           </div>
+
         </div>
-      </main>
+      
+      </div>
+    </main>
 
-    </div>
+  </div>
 
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/what-input/dist/what-input.js"></script>
-    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/login.js"></script>
-  </body>
-  </html>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/dist/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/data.js"></script>
+</body>
+</html>
